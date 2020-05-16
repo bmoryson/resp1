@@ -4,24 +4,19 @@ class Wykladowca extends Czlowiek {
   private String przedmiot;
 
   Wykladowca (){
-   System.out.println("wywolano konstruktor klasy wykladowca"); 
-  }
+   System.out.println("wywołanie: konstruktor klasy wykladowca"); }
 
   public String getPrzedmiot() {
-    return przedmiot;
-  }
+    return przedmiot;}
 
   public void setPrzedmiot(String przedmiot) {
-    this.przedmiot = przedmiot;
-  }
+    this.przedmiot = przedmiot;}
 
   public String getTytul_naukowy() {
-    return nazwisko;
-  }
+    return nazwisko;}
 
   public void setTytul_naukowy(String tytul_naukowy) {
-    this.tytul_naukowy = tytul_naukowy;
-  }
+    this.tytul_naukowy = tytul_naukowy;}
 
 
   @Override
