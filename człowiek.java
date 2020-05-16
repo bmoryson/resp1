@@ -6,32 +6,25 @@ class Czlowiek {
   protected String PESEL;
 
   Czlowiek (){
-   System.out.println("wywolano konstruktor klasy człowiek"); 
-  }
+   System.out.println("wywolano konstruktor klasy człowiek"); }
 
   public String getImie() {
-    return imie;
-  }
+    return imie;}
 
   public void setImie(String imie) {
-    this.imie = imie;
-  }
+    this.imie = imie;}
 
   public String getNazwisko() {
-    return nazwisko;
-  }
+    return nazwisko;}
 
   public void setNazwisko(String nazwisko) {
-    this.nazwisko = nazwisko;
-  }
+    this.nazwisko = nazwisko;}
 
   public String getPESEL(){
-    return PESEL;
-  }
+    return PESEL;}
   
   public void setPESEL(String PESEL) {
-    this.PESEL = PESEL;
-  }
+    this.PESEL = PESEL;}
 
   @Override
   public String toString() {
