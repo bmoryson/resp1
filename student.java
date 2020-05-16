@@ -4,23 +4,19 @@ class Student extends Czlowiek implements Comparable<Student> {
   private double srednia;
 
   Student() {
-    System.out.println("wywolano konstruktor klasy student");
-  }
+    System.out.println("wywołanie: konstruktor klasy student");}
 
   public long getIndex() {
-    return index;
-  }
+    return index;}
 
   public void setIndex(long index) {
-    this.index = index;
-  }
+    this.index = index;}
+  
   public double getSrednia() {
-    return srednia;
-  }
+    return srednia;}
 
   public void setSrednia(double srednia) {
-    this.srednia = srednia;
-  }
+    this.srednia = srednia;}
 
   @Override
   public String toString() {
@@ -30,8 +26,7 @@ class Student extends Czlowiek implements Comparable<Student> {
                 ", PESEL='" + PESEL + '\'' +
                 "index='" + index + '\'' +
                 ", srednia='" + srednia + '\'' +
-                '}';
-  }
+                '}';}
 
   @Override
   public int compareTo(Student student) {
