@@ -4,22 +4,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 class zad2 {
     public static void main(String[] args) {
-
-        metodaTestowa();
-
-    }
+        metodaTestowa();}
 
     public static ArrayList<Student> generuj_studentow(int liczba) {
         ArrayList<Student> Lista_studentow = new ArrayList<>();
         for (int i = 0; i < liczba; i++) {
-            Student student = new Student();
-            student.setImie("Robert");
-            student.setNazwisko("Nowak");
-            student.setPESEL("9283849213");
-            student.setIndex(472638L + i);
-            student.setSrednia(4.5);
-            Lista_studentow.add(student);
-
+              Student student = new Student ();
+              student.setImie("Adam");
+              student.setNazwisko("Testowicz");
+              student.setPESEL("1313131313");
+              student.setIndex(989898L);
+              student.setSrednia(4.0);
         }
         return Lista_studentow;
     }
@@ -31,6 +26,5 @@ class zad2 {
         System.out.println(wygenerowani_studenci);
         wygenerowani_studenci.sort(Collections.reverseOrder());
         System.out.println(wygenerowani_studenci);
-
     }
 }
