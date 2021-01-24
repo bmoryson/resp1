@@ -1,0 +1,406 @@
+CREATE TABLE kraje (
+    id_kraj VARCHAR (3)  PRIMARY KEY,
+    kraj    VARCHAR (20) 
+);
+
+CREATE TABLE pasma (
+    id_pasmo INTEGER      PRIMARY KEY,
+    pasmo    VARCHAR (20) 
+);
+
+CREATE TABLE gory (
+    id_gora  INTEGER      PRIMARY KEY,
+    gora     VARCHAR (20),
+    wysokosc INTEGER,
+    id_kraj  VARCHAR (3),
+    id_pasmo INTEGER
+);
+
+INSERT INTO gory VALUES (
+                     '1',
+                     'Aneto',
+                     '3404',
+                     'HIS',
+                     '4'
+                 );
+
+INSERT INTO gory VALUES (
+                     '2',
+                     'Botew',
+                     '2356',
+                     'RUM',
+                     '5'
+                 );
+
+INSERT INTO gory VALUES (
+                     '3',
+                     'Brocken',
+                     '1142',
+                     'NIE',
+                     '7'
+                 );
+
+INSERT INTO gory VALUES (
+                     '4',
+                     'Corno Grande',
+                     '2912',
+                     'WLO',
+                     '3'
+                 );
+
+INSERT INTO gory VALUES (
+                     '5',
+                     'Dom',
+                     '4545',
+                     'SZW',
+                     '1'
+                 );
+
+INSERT INTO gory VALUES (
+                     '6',
+                     'Gerlach',
+                     '2655',
+                     'SLO',
+                     '2'
+                 );
+
+INSERT INTO gory VALUES (
+                     '7',
+                     'Gross Glockner',
+                     '3790',
+                     'AUS',
+                     '1'
+                 );
+
+INSERT INTO gory VALUES (
+                     '8',
+                     'Liskam',
+                     '4527',
+                     'SZW',
+                     '1'
+                 );
+
+INSERT INTO gory VALUES (
+                     '9',
+                     'Lodowy',
+                     '2598',
+                     'SLO',
+                     '2'
+                 );
+
+INSERT INTO gory VALUES (
+                     '10',
+                     '£omnica',
+                     '2632',
+                     'SLO',
+                     '2'
+                 );
+
+INSERT INTO gory VALUES (
+                     '11',
+                     'Matterhorn',
+                     '4478',
+                     'SZW',
+                     '1'
+                 );
+
+INSERT INTO gory VALUES (
+                     '12',
+                     'Moldovenau',
+                     '2544',
+                     'RUM',
+                     '2'
+                 );
+
+INSERT INTO gory VALUES (
+                     '13',
+                     'Mont Blanc',
+                     '4810',
+                     'FRA',
+                     '1'
+                 );
+
+INSERT INTO gory VALUES (
+                     '14',
+                     'Mont Pedru',
+                     '3355',
+                     'HIS',
+                     '4'
+                 );
+
+INSERT INTO gory VALUES (
+                     '15',
+                     'Mont Posets',
+                     '3375',
+                     'HIS',
+                     '4'
+                 );
+
+INSERT INTO gory VALUES (
+                     '16',
+                     'Negoiu',
+                     '2535',
+                     'RUM',
+                     '2'
+                 );
+
+INSERT INTO gory VALUES (
+                     '17',
+                     'Pico Maldito',
+                     '3350',
+                     'HIS',
+                     '4'
+                 );
+
+INSERT INTO gory VALUES (
+                     '18',
+                     'Rysy',
+                     '2499',
+                     'POL',
+                     '2'
+                 );
+
+INSERT INTO gory VALUES (
+                     '19',
+                     'Semenic',
+                     '1499',
+                     'RUM',
+                     '2'
+                 );
+
+INSERT INTO gory VALUES (
+                     '20',
+                     'Signal Kuppe',
+                     '4554',
+                     'W£O',
+                     '1'
+                 );
+
+INSERT INTO gory VALUES (
+                     '21',
+                     'Snie¿ka',
+                     '1601',
+                     'POL',
+                     '6'
+                 );
+
+INSERT INTO gory VALUES (
+                     '22',
+                     'Studnicka Hora',
+                     '1565',
+                     'CZE',
+                     '6'
+                 );
+
+INSERT INTO gory VALUES (
+                     '23',
+                     'Weisshorn',
+                     '4506',
+                     'SZW',
+                     '1'
+                 );
+
+INSERT INTO gory VALUES (
+                     '24',
+                     'Wezuwiusz',
+                     '1290',
+                     'WLO',
+                     '3'
+                 );
+
+INSERT INTO gory VALUES (
+                     '25',
+                     'Wielki Szyszak',
+                     '1509',
+                     'POL',
+                     '6'
+                 );
+
+INSERT INTO gory VALUES (
+                     '26',
+                     'Zumsteinsoitze',
+                     '4563',
+                     'SZW',
+                     '1'
+                 );
+
+INSERT INTO kraje VALUES (
+                      'AUS',
+                      'Austria'
+                  );
+
+INSERT INTO kraje VALUES (
+                      'CZE',
+                      'Czechy'
+                  );
+
+INSERT INTO kraje VALUES (
+                      'SZW',
+                      'Szwajcaria'
+                  );
+
+INSERT INTO kraje VALUES (
+                      'POL',
+                      'Polska'
+                  );
+
+INSERT INTO kraje VALUES (
+                      'NIE',
+                      'Niemcy'
+                  );
+
+INSERT INTO kraje VALUES (
+                      'WLO',
+                      'W³ochy'
+                  );
+
+INSERT INTO kraje VALUES (
+                      'FRA',
+                      'Francja'
+                  );
+
+INSERT INTO kraje VALUES (
+                      'HIS',
+                      'Hiszpania'
+                  );
+
+INSERT INTO kraje VALUES (
+                      'SLO',
+                      'S³owacja'
+                  );
+
+INSERT INTO kraje VALUES (
+                      'RUM',
+                      'Rumunia'
+                  );
+
+INSERT INTO pasma VALUES (
+                      '1',
+                      'Alpy'
+                  );
+
+INSERT INTO pasma VALUES (
+                      '2',
+                      'Karpaty'
+                  );
+
+INSERT INTO pasma VALUES (
+                      '3',
+                      'Apeniny'
+                  );
+
+INSERT INTO pasma VALUES (
+                      '4',
+                      'Pireneje'
+                  );
+
+INSERT INTO pasma VALUES (
+                      '5',
+                      'Ba³kany'
+                  );
+
+INSERT INTO pasma VALUES (
+                      '6',
+                      'Sudety'
+                  );
+
+INSERT INTO pasma VALUES (
+                      '7',
+                      'Harz'
+                  );
+--ZADANIE 1
+SELECT g.gora,
+       g.wysokosc,
+       k.kraj,
+       p.pasmo
+  FROM gory AS g
+       INNER JOIN
+       kraje AS k ON g.id_kraj = k.id_kraj
+       INNER JOIN
+       pasma AS p ON g.id_pasmo = p.id_pasmo;
+
+ 
+--ZADANIE 2
+--krok1 
+DROP TABLE IF EXISTS gory1;
+DROP TABLE IF EXISTS pasma1;
+
+CREATE TEMPORARY TABLE gory1 AS SELECT *
+                                     FROM gory where id_kraj = 'XXXX';
+CREATE TEMPORARY TABLE pasma1 AS SELECT *
+
+                                     FROM pasma;
+
+create trigger gory1_trigger after insert on gory1
+  when (SELECT id_pasmo FROM pasma1 LIMIT 1 > null) begin
+    DELETE FROM pasma1 WHERE id_pasmo = (SELECT id_pasmo FROM pasma1 LIMIT 1);  
+  end;
+  
+begin;
+  INSERT INTO gory1 SELECT  id_gora, gora, MAX( wysokosc ),id_kraj, id_pasmo  FROM gory WHERE id_pasmo = (SELECT id_pasmo FROM pasma1 LIMIT 1);
+  INSERT INTO gory1 SELECT  id_gora, gora, MAX( wysokosc ),id_kraj, id_pasmo  FROM gory WHERE id_pasmo = (SELECT id_pasmo FROM pasma1 LIMIT 1);
+  INSERT INTO gory1 SELECT  id_gora, gora, MAX( wysokosc ),id_kraj, id_pasmo  FROM gory WHERE id_pasmo = (SELECT id_pasmo FROM pasma1 LIMIT 1);
+  INSERT INTO gory1 SELECT  id_gora, gora, MAX( wysokosc ),id_kraj, id_pasmo  FROM gory WHERE id_pasmo = (SELECT id_pasmo FROM pasma1 LIMIT 1);
+  INSERT INTO gory1 SELECT  id_gora, gora, MAX( wysokosc ),id_kraj, id_pasmo  FROM gory WHERE id_pasmo = (SELECT id_pasmo FROM pasma1 LIMIT 1);
+  INSERT INTO gory1 SELECT  id_gora, gora, MAX( wysokosc ),id_kraj, id_pasmo  FROM gory WHERE id_pasmo = (SELECT id_pasmo FROM pasma1 LIMIT 1);
+  INSERT INTO gory1 SELECT  id_gora, gora, MAX( wysokosc ),id_kraj, id_pasmo  FROM gory WHERE id_pasmo = (SELECT id_pasmo FROM pasma1 LIMIT 1);
+end;
+--krok 2 -raport
+SELECT g.gora, g.wysokosc, p.pasmo FROM gory1 AS g
+INNER JOIN pasma AS p ON g.id_pasmo = p.id_pasmo;
+
+--ZADANIE 3
+--krok1 
+DROP TABLE IF EXISTS gory1;
+DROP TABLE IF EXISTS kraje1;
+
+CREATE TEMPORARY TABLE gory1 AS SELECT *
+                                     FROM gory where id_kraj = 'XXXX';
+CREATE TEMPORARY TABLE kraje1 AS SELECT *
+                                     FROM kraje;
+
+create trigger gory1_trigger after insert on gory1
+  when (SELECT id_kraj FROM kraje1 LIMIT 1 ) <> "" begin
+    DELETE FROM kraje1 WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1);  
+  end;
+  
+begin;
+  INSERT INTO gory1 SELECT  id_gora, gora, MAX( wysokosc ),id_kraj, id_pasmo  FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1);
+  INSERT INTO gory1 SELECT  id_gora, gora, MAX( wysokosc ),id_kraj, id_pasmo  FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1);
+  INSERT INTO gory1 SELECT  id_gora, gora, MAX( wysokosc ),id_kraj, id_pasmo  FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1);
+  INSERT INTO gory1 SELECT  id_gora, gora, MAX( wysokosc ),id_kraj, id_pasmo  FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1);
+  INSERT INTO gory1 SELECT  id_gora, gora, MAX( wysokosc ),id_kraj, id_pasmo  FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1);
+  INSERT INTO gory1 SELECT  id_gora, gora, MAX( wysokosc ),id_kraj, id_pasmo  FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1);
+  INSERT INTO gory1 SELECT  id_gora, gora, MAX( wysokosc ),id_kraj, id_pasmo  FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1);
+end;
+--krok 2 -raport
+SELECT g.gora, g.wysokosc, k.kraj FROM gory1 AS g
+INNER JOIN kraje AS k ON g.id_kraj = k.id_kraj;
+
+--ZADANIE4
+--krok1 
+DROP TABLE IF EXISTS gory1;
+DROP TABLE IF EXISTS kraje1;
+
+CREATE TEMPORARY TABLE gory1 AS SELECT *
+                                     FROM gory where id_kraj = 'XXXX';
+CREATE TEMPORARY TABLE kraje1 AS SELECT *
+                                     FROM kraje;
+ALTER TABLE gory1 ADD SUMA INT;
+
+create trigger gory1_trigger after insert on gory1
+  when (SELECT id_kraj FROM kraje1 LIMIT 1 ) <> "" begin
+    DELETE FROM kraje1 WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1);  
+  end;
+begin;
+INSERT INTO gory1 VALUES ('', '', '', (SELECT  id_kraj FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1)), '', (SELECT  COUNT(*) AS SUMA FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1)) );
+INSERT INTO gory1 VALUES ('', '', '', (SELECT  id_kraj FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1)), '', (SELECT  COUNT(*) AS SUMA FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1)) );
+INSERT INTO gory1 VALUES ('', '', '', (SELECT  id_kraj FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1)), '', (SELECT  COUNT(*) AS SUMA FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1)) );
+INSERT INTO gory1 VALUES ('', '', '', (SELECT  id_kraj FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1)), '', (SELECT  COUNT(*) AS SUMA FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1)) );
+INSERT INTO gory1 VALUES ('', '', '', (SELECT  id_kraj FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1)), '', (SELECT  COUNT(*) AS SUMA FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1)) );
+INSERT INTO gory1 VALUES ('', '', '', (SELECT  id_kraj FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1)), '', (SELECT  COUNT(*) AS SUMA FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1)) );
+INSERT INTO gory1 VALUES ('', '', '', (SELECT  id_kraj FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1)), '', (SELECT  COUNT(*) AS SUMA FROM gory WHERE id_kraj = (SELECT id_kraj FROM kraje1 LIMIT 1)) );
+end;
+--krok 2 -raport
+SELECT k.kraj, g.suma FROM gory1 as g
+INNER JOIN kraje as k ON g.id_kraj = k.id_kraj;
